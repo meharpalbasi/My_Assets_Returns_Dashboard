@@ -13,7 +13,7 @@ import pandas as pd
 
 st.title('Finance Dashboard')
 
-tickers = ('OSTK', 'AMAT', 'PLTR', 'BTC-USD', 'ETH-USD', 'LINK-USD', 'Z', 'DBX', 'F', 'AMD' )
+tickers = ('LGEN', 'MNG', 'MSFT', 'AFRM' , 'RIOT', 'AMD', 'CRWD', 'AAPL', 'GOOGL', 'RIO', 'GSK'  'BTC-USD', 'ETH-USD', 'LINK-USD', 'AVAX-USD' )
 
 dropdown = st.multiselect('Pick your assets',
                           tickers)
@@ -42,3 +42,5 @@ if len(dropdown) > 0:
    
     st.line_chart(df)
     
+
+st.write('App built by [Meharpal Basi] (https://www.meharpalbasi.com/) ')
